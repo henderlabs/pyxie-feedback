@@ -1,0 +1,28 @@
+name: Bug report
+description: Something in PyXie is broken or behaves unexpectedly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This repository is public. Do not paste passwords, tokens, keys, or private hostnames and IP addresses.
+  - type: input
+    id: version
+    attributes:
+      label: PyXie version
+      description: Shown at the bottom of the sidebar, e.g. 0.28.0
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened, and what did you expect?
+      description: Include the steps to repeat it.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Filled in by PyXie if you chose to include it. Safe to edit or delete.
+      render: text
