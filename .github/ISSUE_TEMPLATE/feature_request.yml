@@ -1,0 +1,21 @@
+name: Feature request
+description: Something PyXie should do that it doesn't yet
+labels: ["enhancement"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: PyXie version
+      description: Shown at the bottom of the sidebar, e.g. 0.28.0
+  - type: textarea
+    id: description
+    attributes:
+      label: What would you like, and what problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Filled in by PyXie if you chose to include it. Safe to edit or delete.
+      render: text
