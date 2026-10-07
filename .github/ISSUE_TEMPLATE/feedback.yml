@@ -1,0 +1,21 @@
+name: General feedback
+description: What works, what doesn't, anything else
+labels: ["feedback"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: PyXie version
+      description: Shown at the bottom of the sidebar, e.g. 0.28.0
+  - type: textarea
+    id: description
+    attributes:
+      label: Your feedback
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: Filled in by PyXie if you chose to include it. Safe to edit or delete.
+      render: text
